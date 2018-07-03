@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties>
+		<property name="dialect" value="mysql" />
+	</properties>
+	<settings>
+		<!-- 使全局的映射器启用或禁用缓存。 -->
+		<setting name="cacheEnabled" value="true" />
+		<!-- 全局启用或禁用延迟加载。当禁用时，所有关联对象都会即时加载。 -->
+		<!-- 是否使用 懒加载 关联对象 同 hibernate中的延迟加载 一样 default:true <setting name="lazyLoadingEnabled" 
+			value="false" /> -->
+		<!-- 是否 启用 数据中 A_column 自动映射 到 java类中驼峰命名的属性， default:fasle -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!-- 当结果集中含有Null值时是否执行映射对象的setter或者Map对象的put方法。此设置对于原始类型如int,boolean等无效。默认值：false -->
+		<setting name="callSettersOnNulls" value="true" />
+		<!-- 设置但JDBC类型为空时,某些驱动程序 要指定值,default:OTHER，插入空值时不需要指定类型 -->
+		<setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+</configuration>

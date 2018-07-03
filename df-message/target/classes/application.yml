@@ -1,0 +1,39 @@
+server:
+  port: 9002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9000/eureka/
+spring:
+  application:
+    name: message
+  datasource:
+    name: message_datasource
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/shop_message
+    username: root
+    password: admin
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    in-memory: true
+    pool:
+      enabled: false
+  mail:
+    host: smtp.163.com
+    username: liaoxiang521@163.com
+    password: lx592592
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
+mybatis:
+  type-aliases-package: com.df.mapper
+  mapper-locations: classpath:mapping/*.xml
+  config-location: classpath:mybatis-config.xml

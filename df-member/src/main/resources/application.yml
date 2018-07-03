@@ -1,0 +1,20 @@
+server:
+  port: 9001
+eureka: 
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9000/eureka/
+spring:
+  application:
+    name: member
+  datasource:
+    name: member_datasource
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/shop_member
+    username: root
+    password: admin
+mybatis:
+  type-aliases-package: com.majiaxueyuan.mapper
+  mapper-locations: classpath:mapping/*.xml
+  config-location: classpath:mybatis-config.xml

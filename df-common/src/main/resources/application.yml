@@ -1,0 +1,18 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    password: 
+    port: 6379
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    in-memory: true
+    pool:
+      enabled: false
