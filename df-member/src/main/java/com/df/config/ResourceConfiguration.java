@@ -15,6 +15,12 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 import org.springframework.web.bind.annotation.CrossOrigin;
+/**
+ * 
+ * @author 段帆
+ * 2018年7月4日上午10:53:43
+ * 资源服务器
+ */
 
 @Configuration
 @EnableResourceServer

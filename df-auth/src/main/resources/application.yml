@@ -13,7 +13,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://127.0.0.1:3306/shop_auth
     username: root
-    password: admin
+    password: root
   redis:
     host: 127.0.0.1
     password: null

@@ -8,7 +8,7 @@ import com.df.entity.Member;
 
 
 @Mapper
-public interface MemberMapper {
+public interface MemberMapper{
 	int deleteByPrimaryKey(Integer id);
 
 	int insert(Member record);

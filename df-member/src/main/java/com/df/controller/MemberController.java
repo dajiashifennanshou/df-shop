@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
-import com.df.entity.Member;
-import com.df.mapper.MemberMapper;
 import com.df.mq.MessageSender;
 import com.df.result.Result;
 import com.df.service.MemberService;
@@ -24,8 +22,8 @@ public class MemberController implements MemberService{
 	@Autowired
 	MessageSender sender;
 	
-	@Autowired
-	MemberMapper memberMapper;
+//	@Autowired
+//	MemberMapper memberMapper;
 	
 	@Override
 	public Result register(String emmail, String password) {
@@ -39,8 +37,9 @@ public class MemberController implements MemberService{
 	}
 	@Override
 	public Result getUserByUsername(String username) {
-		Member member = memberMapper.getUserByUsername(username);
-		return new Result(200, "获取成功", member);
+		return null;
+//		Member member = memberMapper.getUserByUsername(username);
+//		return new Result(200, "获取成功", member);
 	}
 
 	@Override

@@ -28,7 +28,7 @@ import com.df.feign.MemberFeign;
 /**
 * @author df
 * @version 创建时间：2018年7月2日 上午10:21:56
-* @Description 类描述
+* @Description 类描述 认证服务器
 */
 @Configuration
 @EnableAuthorizationServer
